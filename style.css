@@ -78,3 +78,45 @@
     color: #5c3100;
 }
 
+
+.menu {
+    display: flex;
+    background-color: rgb(140, 82, 48, 0.5);
+    height: 800px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffeadd;
+    border-radius: 10px;
+    height: 50px;
+    width: 1700px;
+    margin-top: 20px;
+}
+
+.barra-usuário{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.barra-usuário i {
+    font-size: 30px;
+}
+
+.barra-usuário h1 {
+    font-size: 20px;
+}
+
+.barra-favorito i{
+    font-size: 30px;
+    margin-right: 15px;
+}
