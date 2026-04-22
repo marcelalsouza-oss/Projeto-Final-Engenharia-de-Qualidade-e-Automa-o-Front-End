@@ -1,8 +1,8 @@
-# Projeto Final: Engenharia de Qualidade e Automação Front-End
+Projeto Final: Engenharia de Qualidade e Automação Front-End
 PintheDogs é um catálogo digital interativo para entusiastas de cães que, inspirado no estilo do Pinterest,
-utiliza APIs para exibir e organizar fotos de diversas raças em uma galeria visualmente atraente.
+Utiliza APIs para exibir e organizar fotos de diversas raças em uma galeria visualmente atraente.
 
-## Tecnologias
+Tecnologias
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
@@ -10,12 +10,12 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 -API “TheDogAPI”
 
-##  Projeto
+Projeto
 
 O PinTheDog é uma aplicação que oferece uma experiência personalizada de descoberta de raças através de uma interface temática (Front-end) 
 e um sistema funcional de busca em tempo real com salvamento de favoritos via localStorage (Back-end/JS).
 
-##  Instalação e Execução
+Instalação e Execução
 
 Para rodar o projeto localmente, siga os passos abaixo:
 
@@ -26,5 +26,3 @@ Para rodar o projeto localmente, siga os passos abaixo:
    npm start
 
 3. Abrir o site por link ou via live server.
-
-
