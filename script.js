@@ -1,21 +1,31 @@
-// PinTheDogs JS - Busca e Interatividade
-document.addEventListener('DOMContentLoaded', function() {
-const searchInput = document.querySelector('.search-box input');
-const dogCards = document.querySelectorAll('.dog-card');
+const API_KEY = "live_7gaBlmKKZul8IM4Nv2kM0qvp2U6wMrbtqrZS5gDagmFEZYD2zTejSDatOEYPBuBO";
 
-  // Função para filtrar dogs pela busca
-function filterDogs() {
-    const term = searchInput.value.toLowerCase().trim();
-    dogCards.forEach(card => {
-    const name = card.dataset.dogName.toLowerCase();
-    if (term === '' || name.includes(term)) {
-        card.style.display = '';
-    } else {
-        card.style.display = 'none';
-    }
+const cards = document.querySelectorAll(".dog-card");
+
+async function carregarDogs() {
+  try {
+    const response = await fetch(
+      `https://api.thedogapi.com/v1/images/search?limit=${cards.length}`,
+      {
+        headers: {
+          "x-api-key": API_KEY
+        }
+      }
+    );
+
+    const data = await response.json();
+
+    cards.forEach((card, index) => {
+      const img = card.querySelector("img");
+
+      if (data[index]) {
+        img.src = data[index].url;
+      }
     });
+
+  } catch (error) {
+    console.error("Erro:", error);
+  }
 }
 
-  // Evento de busca
-searchInput.addEventListener('input', filterDogs);
-});
+carregarDogs();
