@@ -122,7 +122,7 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 28px;
+  font-size: 32px;
   color: #5c2f17;
 }
 
@@ -160,7 +160,7 @@ body {
   position: absolute;
   right: 14px;
   bottom: 10px;
-  font-size: 24px;
+  font-size: 34px;
   cursor: pointer;
   color: #6b3b1f;
 }
