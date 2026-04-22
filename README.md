@@ -1,4 +1,6 @@
 Projeto Final: Engenharia de Qualidade e Automação Front-End
+
+
 PintheDogs é um catálogo digital interativo para entusiastas de cães que, inspirado no estilo do Pinterest,
 Utiliza APIs para exibir e organizar fotos de diversas raças em uma galeria visualmente atraente.
 
